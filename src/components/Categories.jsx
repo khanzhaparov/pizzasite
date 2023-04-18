@@ -14,7 +14,7 @@ const Categories = () => {
     <div className="categories">
       <ul>
         {categories.map((value, index) => (
-          <li onClick={() => onClickCategory(index)} className={activeIndex === index ? 'active' : ''}>{value}</li>
+          <li onClick={() => onClickCategory(index)} className={activeIndex === index ? 'active' : ''} key={value}>{value}</li>
         ))}
       </ul>
     </div>
